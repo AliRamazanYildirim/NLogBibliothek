@@ -6,15 +6,38 @@ namespace NLogBibliothek.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //1. Weg
 
-        public HomeController(ILogger<HomeController> logger)
+        //private readonly ILogger<HomeController> _logger;
+
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+
+        //public IActionResult Index()
+        //{
+        //    _logger.LogTrace("Indexseite wurde eingegeben.-Trace");
+        //    _logger.LogDebug("Indexseite wurde eingegeben.-Debug");
+        //    _logger.LogInformation("Indexseite wurde eingegeben.");
+        //    _logger.LogWarning("Indexseite wurde eingegeben.-Warning");
+        //    _logger.LogError("Indexseite wurde eingegeben.-Error");
+        //    _logger.LogCritical("Indexseite wurde eingegeben.-Critical");
+        //    return View();
+        //}
+
+        //2.Weg wenn man einen benutzerdefinierten Name verwenden möchte
+        private readonly ILoggerFactory _loggerFactory;
+
+        public HomeController(ILoggerFactory loggerFactory)
         {
-            _logger = logger;
+            _loggerFactory = loggerFactory;
         }
 
+        
         public IActionResult Index()
         {
+            var _logger= _loggerFactory.CreateLogger("Logging Kategorien");
             _logger.LogTrace("Indexseite wurde eingegeben.-Trace");
             _logger.LogDebug("Indexseite wurde eingegeben.-Debug");
             _logger.LogInformation("Indexseite wurde eingegeben.");
