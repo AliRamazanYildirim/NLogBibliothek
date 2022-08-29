@@ -3,7 +3,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.ConfigureLogging(logging =>
 {
     logging.ClearProviders();
-    
+    logging.AddDebug();
 });
 
 // Add services to the container.
