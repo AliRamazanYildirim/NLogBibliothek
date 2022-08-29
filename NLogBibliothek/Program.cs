@@ -1,4 +1,10 @@
 var builder = WebApplication.CreateBuilder(args);
+//builder.Logging.ClearProviders();
+builder.Host.ConfigureLogging(logging =>
+{
+    logging.ClearProviders();
+    
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
