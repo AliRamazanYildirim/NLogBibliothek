@@ -11,7 +11,9 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-
+//Die Protokollierung(Logging) kann ohne Abhängigkeitsinjektion(Dependency Injection) erfolgen, wie unten beschrieben 
+var logger = app.Services.GetRequiredService<ILogger<Program>>();
+logger.LogInformation("Die App wird hochgefahren...");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
