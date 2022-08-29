@@ -15,6 +15,12 @@ namespace NLogBibliothek.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogTrace("Indexseite wurde eingegeben.-Trace");
+            _logger.LogDebug("Indexseite wurde eingegeben.-Debug");
+            _logger.LogInformation("Indexseite wurde eingegeben.");
+            _logger.LogWarning("Indexseite wurde eingegeben.-Warning");
+            _logger.LogError("Indexseite wurde eingegeben.-Error");
+            _logger.LogCritical("Indexseite wurde eingegeben.-Critical");
             return View();
         }
 
