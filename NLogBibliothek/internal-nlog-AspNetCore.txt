@@ -5,3 +5,23 @@
 2022-08-29 15:23:12.0039 Info Adding target ConsoleTarget(Name=lifetimeConsole)
 2022-08-29 15:23:12.4317 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
 2022-08-29 15:23:21.4703 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-01 13:01:40.2908 Info Message Template Auto Format enabled
+2022-09-01 13:01:40.4198 Info Loading assembly: NLog.Web.AspNetCore
+2022-09-01 13:01:41.5584 Info Adding target FileTarget(Name=allfile)
+2022-09-01 13:01:41.5911 Info Adding target FileTarget(Name=ownFile-web)
+2022-09-01 13:01:41.6108 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-09-01 13:01:42.0879 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-01 13:02:05.4989 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=56, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-01 13:19:22.0956 Info Message Template Auto Format enabled
+2022-09-01 13:19:22.2236 Info Loading assembly: NLog.Web.AspNetCore
+2022-09-01 13:19:22.8923 Info Adding target FileTarget(Name=allfile)
+2022-09-01 13:19:22.9092 Info Adding target FileTarget(Name=ownFile-web)
+2022-09-01 13:19:22.9183 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-09-01 13:19:23.0055 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Failed to create Target of type: Database
+ ---> System.ArgumentException: Target type-alias is unknown: 'Database'. Extension NLog.Database not included?
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Config.LoggingConfigurationParser.FactoryCreateInstance[T](String classType, INamedItemFactory`2 factory)
+   --- End of inner exception stack trace ---
+2022-09-01 13:19:24.7930 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'database' not found for logging rule: *.
+2022-09-01 13:19:25.1270 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=57, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-01 13:19:32.8745 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=57, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
