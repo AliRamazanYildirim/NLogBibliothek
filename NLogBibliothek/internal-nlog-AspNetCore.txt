@@ -25,3 +25,24 @@
 2022-09-01 13:19:24.7930 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'database' not found for logging rule: *.
 2022-09-01 13:19:25.1270 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=57, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
 2022-09-01 13:19:32.8745 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=57, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-10 15:28:10.5519 Info Message Template Auto Format enabled
+2022-09-10 15:28:10.6269 Info Loading assembly: NLog.Web.AspNetCore
+2022-09-10 15:28:11.1812 Info Adding target FileTarget(Name=allfile)
+2022-09-10 15:28:11.1947 Info Adding target FileTarget(Name=ownFile-web)
+2022-09-10 15:28:11.2373 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-09-10 15:28:11.5266 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Failed to create Target of type: Database
+ ---> System.ArgumentException: Target type-alias is unknown: 'Database'. Extension NLog.Database not included?
+   at NLog.Config.Factory`2.CreateInstance(String itemName)
+   at NLog.Config.LoggingConfigurationParser.FactoryCreateInstance[T](String classType, INamedItemFactory`2 factory)
+   --- End of inner exception stack trace ---
+2022-09-10 15:28:12.8231 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'database' not found for logging rule: *.
+2022-09-10 15:28:12.9437 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=57, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-10 15:28:21.9283 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=57, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-10 15:33:55.0433 Info Message Template Auto Format enabled
+2022-09-10 15:33:55.2188 Info Loading assembly: NLog.Web.AspNetCore
+2022-09-10 15:33:55.8271 Info Adding target FileTarget(Name=allfile)
+2022-09-10 15:33:55.8766 Info Adding target FileTarget(Name=ownFile-web)
+2022-09-10 15:33:55.9001 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-09-10 15:33:57.8157 Info Adding target DatabaseTarget(Name=database)
+2022-09-10 15:33:58.0763 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, database, ConfigItems=85, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
+2022-09-10 15:34:08.2027 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, database, ConfigItems=85, FilePath=C:\Users\Thinkpad\source\repos\NLogBibliothek\NLogBibliothek\bin\Debug\net6.0\NLog.config
